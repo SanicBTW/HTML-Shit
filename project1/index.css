@@ -1,0 +1,164 @@
+/* goofy ass code */
+
+/* TODO: order code or smth dumbass */
+
+@font-face 
+{
+    font-family: 'Roboto Flex';
+    src: url('assets/RobotoFlex-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+    font-family: "Roboto Flex";
+}
+
+html, body
+{
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.musicPlayer
+{
+    color: black;
+    height: 34%;
+    width: 42%;
+    user-select: none;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1); 
+    border-radius: 25px;
+    position: absolute;
+}
+
+/* sorry im just really fucking dumb */
+
+.musicPlayer .musicPlayerInfo
+{
+    margin: 0.8rem;
+}
+
+.musicPlayerInfo .musicPlayerIcon
+{
+    max-height: 35px;
+    position: absolute;
+}
+
+.musicPlayerInfo .musicPlayerDevice
+{
+    height: 12%;
+    width: 21%;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1); 
+    border-radius: 25px;
+    position: absolute;
+    right: 0px;
+    margin-right: 0.8rem;
+    opacity: 0.5;
+}
+
+.musicPlayerDevice p
+{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.musicPlayerDevice img
+{
+    max-height: 19px;
+    top: 5.5px;
+    left: 8px;
+    position: absolute;
+}
+
+.musicPlayerInfo .musicPlayerControls
+{
+    cursor: pointer;
+    max-height: 30px;
+    bottom: 0px;
+    margin-bottom: 0.8rem;
+    position: absolute;
+}
+
+.musicPlayerControls[next]
+{
+    right: 96.2px;
+    margin-right: 0.8rem;
+}
+
+.musicPlayerControls[shuffle]
+{
+    right: 49px;
+    margin-right: 0.8rem;
+}
+
+.musicPlayerControls[like]
+{
+    right: 0px;
+    margin-right: 0.8rem;
+}
+
+.musicPlayerInfo .progressBar[parent]
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 60%;
+    bottom: 0px;
+    position: absolute;
+    margin-bottom: 1.6rem;
+    margin-left: 4rem;
+}
+
+.progressBar[progress]
+{
+    width: 50%;
+    height: 5px;
+    background-color: white;
+}
+
+.musicPlayerInfo .musicPlayerText
+{
+    position: absolute;
+    top: 80px;
+    margin-left: 0.2rem;
+}
+
+.musicPlayerText h1
+{
+    font-weight: normal;
+}
+
+.musicPlayerText p
+{
+    margin-top: -15px;
+}
+
+.musicPlayerInfo .musicPlayerControlBtn[parent]
+{
+    height: 30%;
+    width: 12%;
+    user-select: none;
+    background-color: dodgerblue;
+    transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1); 
+    border-radius: 50px;
+    position: absolute;
+    right: 0px;
+    margin-right: 0.8rem;
+    top: 80px;
+}
+
+.musicPlayerControlBtn[child]
+{
+    cursor: pointer;
+    position: absolute;
+    margin: 0.85rem;
+}

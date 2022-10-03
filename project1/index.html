@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>project 1</title>
+
+        <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+        <script>eruda.init();</script>
+
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="musicPlayer">
+            <!-- goofy ass code fr -->
+            <div class="musicPlayerInfo">
+                <!-- header -->
+                <img class="musicPlayerIcon" src="./assets/spotify.png">
+
+                <div class="musicPlayerDevice">
+                    <img src="./assets/m3phoneicon.png">
+                    <p>Este teléfono</p>
+                </div>
+
+                <!-- info shit -->
+                <span class="musicPlayerText">
+                    <h1>Music Title</h1>
+                    <p>Artist</p>
+                </span>
+
+                <div class="musicPlayerControlBtn" parent id="playbtnparent">
+                    <img class="musicPlayerControlBtn" child src="./assets/m3playicon.png" id="playbtn" onclick="
+                    var btn = document.getElementById('playbtn');
+                    var btnparent = document.getElementById('playbtnparent');
+                    if(btn.src.includes('m3playicon.png'))
+                    {
+                        btn.src = './assets/m3pauseicon.png';
+                        btnparent.style.borderRadius = '25px';
+                    }
+                    else
+                    {
+                        btn.src = './assets/m3playicon.png';
+                        btnparent.style.borderRadius = '50px';
+                    }
+                    ">
+                </div>
+
+                <!-- bottom controls -->
+                <img class="musicPlayerControls" src="./assets/m3skipprevicon.png">
+                <div class="progressBar" parent> <div class="progressBar" progress> </div> </div>
+                <img class="musicPlayerControls" next src="./assets/m3skipnexticon.png">
+                <img class="musicPlayerControls" shuffle src="./assets/m3shuffleicon.png">
+                <img class="musicPlayerControls" like src="./assets/m3favicon.png">
+            </div>
+        </div>
+    </body>
+</html>
