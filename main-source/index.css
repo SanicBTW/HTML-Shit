@@ -14,3 +14,41 @@ html, body
     justify-content: center;
     height: 100%;
 }
+
+.sideBar
+{
+    user-select: none; 
+    color: black; 
+    height: 100%; 
+    width: 25%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    overflow-x: hidden; 
+    transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1); 
+    border-radius: 0px 25px 25px 0px;
+}
+
+.sideBar .item
+{
+    user-select: none;
+    color: black;
+    height: fit-content;
+    width: 25%;
+    max-width: 25%;
+    overflow-x: hidden;
+    transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 2;
+}
+
+.textContent 
+{
+    margin: 1rem;
+}
