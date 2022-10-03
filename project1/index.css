@@ -125,6 +125,17 @@ html, body
     background-color: white;
 }
 
+.progressBar[tracker]
+{
+    border-radius: 50px;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    margin-left: 11.7rem;
+    position: absolute;
+    top: -5px;
+}
+
 .musicPlayerInfo .musicPlayerText
 {
     position: absolute;
