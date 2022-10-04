@@ -1,0 +1,68 @@
+/* goofy ass code */
+
+/* TODO: order code or smth dumbass */
+
+@font-face 
+{
+    font-family: 'Roboto Flex';
+    src: url('../project1/assets/RobotoFlex-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+    font-family: "Roboto Flex";
+}
+
+html, body
+{
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBar
+{
+    user-select: none; 
+    color: black; 
+    height: 100%; 
+    width: 25%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    overflow-x: hidden; 
+    transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1); 
+    border-radius: 0px 25px 25px 0px;
+}
+
+.sideBar .item
+{
+    user-select: none;
+    color: black;
+    height: fit-content;
+    width: 25%;
+    max-width: 25%;
+    overflow-x: hidden;
+    transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0px 25px 0px 0px;
+    position: fixed;
+    z-index: 2;
+}
+
+.item[child]
+{
+    border-radius: 0px;
+}
+
+.textContent 
+{
+    margin: 1rem;
+}
